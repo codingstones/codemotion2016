@@ -55,10 +55,11 @@
         <section data-markdown>
           <script type="text/template">
             ## Sobre nosotros
-          </script>
-        </section>
 
-        <section data-markdown data-background-image="images/stones.png">
+            * Equipo pequeño y multidisciplinar, a là *XP*
+            * Código sólido como una roca
+            * Una experiencia de usuario fuera de serie
+          </script>
         </section>
 
         <section data-markdown>
@@ -73,13 +74,14 @@
           </script>
         </section>
 
+        <section data-markdown data-background-image="images/stones.png">
+        </section>
+
         <section data-markdown>
           <script type="text/template">
-            ## ¿Cómo lo hacemos?
+            ## Uno de nuestros proyectos
 
-            * Equipo pequeño y multidisciplinar, a là *XP*
-            * Código sólido como una roca
-            * Una experiencia de usuario fuera de serie
+            esPublico - Conecta
           </script>
         </section>
 
@@ -117,13 +119,7 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            ## Delivery Mechanism
-          </script>
-        </section>
-
-        <section data-markdown>
-          <script type="text/template">
-            ## El framework que se utiliza es un *puto* detalle
+            ## El framework web es un *puto* detalle
           </script>
         </section>
 
@@ -141,7 +137,7 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            ## Arquitecura
+            ## Arquitectura
 
             ###Model-View-Controller
           </script>
@@ -152,10 +148,22 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            ## ~~Arquitecura~~
+            ## ~~Arquitectura~~
             ## Patrón
 
             ###Model-View-Controller
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Delivery Mechanism
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Deuda Técnica
           </script>
         </section>
 
@@ -173,8 +181,9 @@ $ rails start
             ## Decisiones de nuestra "arquitectura"
 
             * Clean Architecture / Hexagonal Architecture
-            * Domian-Driven Design
+            * Domain-Driven Design
             * Multitenancy
+            * Stateless
             * Sharding
             * Single Page Interface
           </script>
@@ -194,27 +203,22 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            ## Domian-Driven Design
+            ## Domain-Driven Design
 
             * Strategic
               * Ubiquitous Language
             * Tactical
               * Application Services
-              * Aggregates
               * Entities
               * Value Objects
               * Domain Services
               * Repositories
               * Domain Events
+              * Aggregates
           </script>
         </section>
 
-        <section data-markdown>
-          <script type="text/template">
-            ## Que sí... ¿Pero cómo?
-
-            ![Database in the Middle](images/meh.jpg)
-          </script>
+        <section data-markdown data-background-image="images/meh.jpg">
         </section>
 
         <section data-markdown>
@@ -249,14 +253,13 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            ## Iteraction Driven Design
+            ## Interaction Driven Design
 
             * Punto de entrada para descubrir el API
             * TDD Outside-In (*London School*)
-            * Las actions **no** sustituyen a un servicio de dominio
             * Un action no puede llamar a otra
+            * Las actions **no** sustituyen a un servicio de dominio
             * *Read model* puede hacer uso directo de Repositories
-            * Cuando toca: *Domain Payload Object* / *Data Trasfer Objet*
           </script>
         </section>
 
@@ -272,21 +275,40 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
-            * TDD - Rspec - Factory Girl - Simplecov
             * Repositories en memoria a MySQL (Sequel)
             * DI / Factories
+            * *Domain Payload Object* / *Data Transfer Object*
             * Sinatra a Grape
-            * Grape Entity
-            * Grape Swagger
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Infraestructura
+
+            * MySQL
             * Rabbit MQ
-            * SMSs
+            * File Storage
+            * Push Notifications
             * Emails
-            * Notificaciones Push
-            * Cloud File Storage
+            * SMSs
             * Image Magick
+            * PDFKit
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ## Gems
+            * Rspec
+            * Factory Girl
+            * Bunny
             * Warden
             * JWT
-            * Circle
+            * Grape Entity
+            * Grape Swagger
+            * Mini Magick
+            * Faker
           </script>
         </section>
 
