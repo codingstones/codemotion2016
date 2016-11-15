@@ -275,8 +275,33 @@ $ rails start
 
         <section data-markdown>
           <script type="text/template">
+            ## DI / Factories
+            
+            <pre>
+            <code>
+            //Factory code
+            def add_a_message_for_issue_by_person_action
+              @add_a_message_for_issue ||= AddAMessageForIssueByPerson.new(
+                @repository_factory.issue_repository,
+                @repository_factory.person_repository, 
+                @infrastructure_factory.clock)
+            end
+
+            //Client code
+            action = Conecta::API::FACTORY.add_a_message_for_issue_by_person_action
+
+            issue = action.run(institution_id, issue_id, person_id, content)
+
+
+
+            </code>
+            </pre>
+          </script>
+        </section>
+
+        <section data-markdown>
+          <script type="text/template">
             * Repositories en memoria a MySQL (Sequel)
-            * DI / Factories
             * *Domain Payload Object* / *Data Transfer Object*
             * Sinatra a Grape
           </script>
