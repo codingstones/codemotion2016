@@ -44,7 +44,7 @@
       <div class="slides">
         <section data-markdown>
           <script type="text/template">
-            # Una historia 
+            # Una historia
             ## sobre Clean Architecture con Ruby
 
             **Codemotion Spain 2016** <br/><br/>
@@ -81,7 +81,7 @@
           <script type="text/template">
             ## Uno de nuestros proyectos
 
-            esPublico - Conecta
+            ![esPublico Conecta logos](images/espublico_conecta_logos.png)
           </script>
         </section>
 
@@ -276,14 +276,14 @@ $ rails start
         <section data-markdown>
           <script type="text/template">
             ## DI / Factories
-            
+
             <pre>
             <code>
             //Factory code
             def add_a_message_for_issue_by_person_action
               @add_a_message_for_issue ||= AddAMessageForIssueByPerson.new(
                 @repository_factory.issue_repository,
-                @repository_factory.person_repository, 
+                @repository_factory.person_repository,
                 @infrastructure_factory.clock)
             end
 
@@ -302,7 +302,7 @@ $ rails start
         <section data-markdown>
           <script type="text/template">
             ## DPOs / DTOs
-            * Domain Payload Object 
+            * Domain Payload Object
             * Data Transfer Object
           </script>
         </section>
@@ -313,14 +313,14 @@ $ rails start
 
             * En memoria a MySQL
             * Sequel
-            
+
           </script>
         </section>
 
         <section data-markdown>
           <script type="text/template">
             ## Sinatra a Grape
-            
+
           </script>
         </section>
         <section data-markdown>
